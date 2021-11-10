@@ -66,13 +66,11 @@ public class ContactDetailsMain {
 		System.out.println("Reading AddressBook from File");
         AddContact.readFromFile();
         System.out.println();
-        System.out.println("AddressBooks Sorted based on First Name :");
-        AddContact.sort(hashTable,SortOptions.NAME);
         System.out.println("AddressBooks Sorted based on city :");
-        AddContact.sort(hashTable,SortOptions.CITY);
+        AddContact.sort(hashTable,SortOption.CITY);
         System.out.println("AddressBooks Sorted based on state :");
-        AddContact.sort(hashTable,SortOptions.STATE);
+        AddContact.sort(hashTable,SortOption.STATE);
         System.out.println("AddressBooks Sorted based on Zip :");
-        AddContact.sort(hashTable,SortOptions.ZIP);
+        AddContact.sort(hashTable,SortOption.ZIP);
 	}
 }
